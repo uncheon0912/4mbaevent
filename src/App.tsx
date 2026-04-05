@@ -28,10 +28,12 @@ function LocationAndReservation() {
               href={NAVER_BOOKING_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-3 bg-[#b39ddb] text-white border-4 border-[#b39ddb] font-bold text-2xl md:text-4xl py-6 px-16 rounded-full shadow-[0_0_30px_rgba(179,157,219,0.6)] hover:bg-white hover:text-[#b39ddb] transition-all duration-300 animate-pulse"
+              className="inline-flex items-center justify-center gap-3 bg-[#b39ddb] text-white border-4 border-[#b39ddb] font-bold text-2xl md:text-4xl py-6 px-8 md:px-16 rounded-full shadow-[0_0_30px_rgba(179,157,219,0.6)] hover:bg-white hover:text-[#b39ddb] transition-all duration-300 animate-pulse"
             >
-              <Calendar className="w-8 h-8 md:w-10 md:h-10" />
-              1:1 맞춤 리프팅 예약하기
+              <span className="text-center">
+                1:1 맞춤 <br className="block md:hidden" />
+                리프팅 예약하기
+              </span>
             </a>
           </div>
         </div>
