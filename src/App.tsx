@@ -104,7 +104,7 @@ export default function App() {
       {/* Top Fixed Consultation Button (Kakao) */}
       <div className="fixed top-4 right-4 z-50">
         <a
-          href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Fpf.kakao.com%2F_MBxdzX%2Fchat#login"
+          href="https://pf.kakao.com/_MBxdzX/chat"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 bg-[#FEE500] text-[#391B1B] border-2 border-[#FEE500] font-bold py-3 px-6 rounded-full shadow-[0_0_15px_rgba(254,229,0,0.4)] hover:bg-[#FEE500]/90 transition-all duration-300 animate-pulse"
