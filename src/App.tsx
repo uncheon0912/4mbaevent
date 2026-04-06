@@ -101,13 +101,28 @@ function LocationAndReservation() {
 export default function App() {
   return (
     <div className="min-h-screen bg-white font-sans text-gray-900">
-      {/* Top Fixed Reservation Button */}
+      {/* Top Fixed Consultation Button (Kakao) */}
       <div className="fixed top-4 right-4 z-50">
+        <a
+          href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Fpf.kakao.com%2F_MBxdzX%2Fchat#login"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 bg-[#FEE500] text-[#391B1B] border-2 border-[#FEE500] font-bold py-3 px-6 rounded-full shadow-[0_0_15px_rgba(254,229,0,0.4)] hover:bg-[#FEE500]/90 transition-all duration-300 animate-pulse"
+        >
+          <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 3c-5.523 0-10 3.582-10 8 0 2.864 1.802 5.373 4.5 6.777-.32 1.116-1.156 4.02-1.188 4.14-.04.15.053.23.166.18.144-.064 3.39-2.27 4.71-3.23.58.087 1.18.133 1.81.133 5.523 0 10-3.582 10-8s-4.477-8-10-8z"/>
+          </svg>
+          상담하기
+        </a>
+      </div>
+
+      {/* Bottom Center Fixed Reservation Button */}
+      <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50">
         <a
           href={NAVER_BOOKING_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 bg-[#b39ddb] text-white border-2 border-[#b39ddb] font-bold py-3 px-6 rounded-full shadow-[0_0_15px_rgba(179,157,219,0.4)] hover:bg-white hover:text-[#b39ddb] transition-all duration-300 animate-pulse"
+          className="flex items-center justify-center gap-2 bg-[#b39ddb] text-white border-2 border-[#b39ddb] font-bold py-4 px-10 rounded-full shadow-[0_0_20px_rgba(179,157,219,0.5)] hover:bg-white hover:text-[#b39ddb] transition-all duration-300 animate-pulse whitespace-nowrap"
         >
           <Calendar className="w-5 h-5" />
           예약하기
@@ -115,7 +130,7 @@ export default function App() {
       </div>
 
       {/* Images Section */}
-      <div className="w-full max-w-3xl mx-auto flex flex-col items-center bg-white">
+      <div className="w-full max-w-3xl mx-auto flex flex-col items-center bg-white gap-4 md:gap-5 pb-24">
         {IMAGES.map((src, index) => (
           <motion.div
             key={index}
