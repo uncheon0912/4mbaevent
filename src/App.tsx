@@ -42,44 +42,14 @@ function LocationAndReservation() {
       {/* Bottom Banner with Info Card and Text */}
       <div className="w-full bg-[#c27c70] py-20 px-4">
         <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-20">
-          {/* Info Card (Left) */}
-          <div className="w-full max-w-md bg-white rounded-2xl p-8 shadow-xl">
-            <div className="space-y-8">
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-full bg-red-50 flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-5 h-5 text-[#c8857a]" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-gray-900 mb-1">주소</h3>
-                  <p className="text-sm text-gray-600">서울특별시 강남구 봉은사로 213, 5층</p>
-                  <p className="text-xs text-gray-400 mt-1">(삼성금거래소 건물)</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-full bg-red-50 flex items-center justify-center flex-shrink-0">
-                  <Calendar className="w-5 h-5 text-[#c8857a]" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-gray-900 mb-1">진료 시간</h3>
-                  <p className="text-sm text-gray-600">평일 10:00 - 20:30</p>
-                  <p className="text-xs text-gray-400 mb-1">(20시 접수마감)</p>
-                  <p className="text-sm text-gray-600">토요일 10:00 - 15:00</p>
-                  <p className="text-xs text-gray-400 mb-1">(14:30시 접수마감)</p>
-                  <p className="text-xs text-gray-400 mt-1">(일요일/수요일 정기휴진)</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-full bg-red-50 flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-5 h-5 text-[#c8857a]" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-gray-900 mb-1">문의 전화</h3>
-                  <p className="text-sm font-bold text-[#c8857a]">02.6228.0506</p>
-                </div>
-              </div>
-            </div>
+          {/* Info Card (Left) - Replaced with Image */}
+          <div className="w-full max-w-md rounded-2xl shadow-xl overflow-hidden bg-white">
+            <img
+              src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FPxhSV%2FdJMcahjGLs7%2FAAAAAAAAAAAAAAAAAAAAAHjGZHYb7VI8mUfv14Ri8r7SROV-f1D9EIC7Bh2jPOVF%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1777561199%26allow_ip%3D%26allow_referer%3D%26signature%3DHy8PhfeLTcrFhdWyLVWZZX8MXHA%253D"
+              alt="진료 안내"
+              className="w-full h-auto block"
+              referrerPolicy="no-referrer"
+            />
           </div>
 
           {/* Text (Right) */}
